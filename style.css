@@ -1,19 +1,8 @@
 body{
     background-color: cyan;
 }
-.name{
-    border-style: dashed;
-    background-color: chocolate;
-}
-.switch{
+div.name, .switch, .textv, .add{
     border-style: dotted;
-    background-color: rgb(30, 186, 210);
-}
-.textv{
-    border-style: solid;
-    background-color: rgb(144, 210, 30);
-}
-.add{
-    border-style: groove;
-    background-color: rgb(108, 30, 210);
+    background-color: chocolate;
+    border-color: brown;
 }

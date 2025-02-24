@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <h1>INST377 - Lab4</h1>
+    <h1>INST377 - Lab4 -> <p id="add"></p></h1>
+    <script>
+        function add() {
+            document.getElementById("add").innerHTML = "Never Gonna Give You UP, Never Gonna Let You DOWN!";
+        }
+    </script>
 </head>
 <body>
     <div class="name"><section>
+        <form>
         <label for="name">Name: </label>
         <input type="text" id="name" name="name">
+        <button type="button" onclick="alert(name)">Alert Me!</button>
+        </form>
     </section></div>
 
     <div class="switch"><section>
-        <button type="reset">Change Color</button>
+        <button type="button" onclick="">Change Color</button>
     </section></div>
 
     <div class="textv"><section>
         <label for="text">Test Tester: </label>
         <input type="text" id="text" name="text">
-        <button type="value">Validate Text</button>
+        <button type="button" onclick="">Validate Text</button>
     </section></div>
 
     <div class="add"><section>
-        <button type="submit">Add Text</button>
+        <button type="button" onclick="add()">Add Text</button>
     </section></div>
 
 </body>
-
 </html>
