@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <h1>INST377 - Lab4 -> <p id="add"></p></h1>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <h1>INST377 - Lab4 -> </h1>
     <script>
         function add() {
             document.getElementById("add").innerHTML = "Never Gonna Give You UP, Never Gonna Let You DOWN!";
@@ -18,13 +19,36 @@
     </section></div>
 
     <div class="switch"><section>
-        <button type="button" onclick="">Change Color</button>
+        <button type="button" onclick="color()">Change Color</button>
+        <script>
+            function color() {
+                if (backgroundColor= "cyan"){
+                document.body.style.backgroundColor= "purple";
+                }
+                else{
+                document.body.style.backgroundColor= "cyan";
+                }
+            }
+
+        </script>
     </section></div>
 
-    <div class="textv"><section>
-        <label for="text">Test Tester: </label>
-        <input type="text" id="text" name="text">
-        <button type="button" onclick="">Validate Text</button>
+    <div class="textv"><section><form>
+        <label for="textin">Test Tester: </label>
+        <input type="text" id="textin" name="textin">
+        <button type="button" onclick="alert(validate)">Validate Text</button></form>
+        <script>
+            function validate() {
+               var textin = document.getElementById("texin").value;
+               var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+               if (validation.test(textin)){
+                alert("No special characters!");
+               }
+               else{
+                alert("Text is Validated");
+               }
+            }
+        </script>
     </section></div>
 
     <div class="add"><section>
