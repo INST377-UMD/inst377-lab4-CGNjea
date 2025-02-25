@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <h1>INST377 - Lab4 -> <p id="add"></p></h1> 
+    <script>
+        function add() {
+            document.getElementById("add").innerHTML = "Never Gonna Give You UP, Never Gonna Let You DOWN!";
+        }
+    </script>
+</head>
+<body>
+    <div class="name"><section>
+        <form id="namealert" onsubmit="alert(hiname)">
+        <label for="namein">Name: </label>
+        <input type="text" id="namein" name="namein">
+        <button type="submit">Alert Me!</button>
+        </form>
+        <script>
+            function hiname(event) {
+                event.preventDefault();
+                const name = document.getElementById('namein').value;
+                alert(document.write("HI" + namein +"!"));
+            }
+        </script>
+    </section></div>
+
+    <div class="switch"><section>
+        <button type="button" onclick="color()">Change Color</button>
+        <script>
+            function color() {
+                const currentColor = document.body.style.backgroundColor;
+                document.body.style.backgroundColor = currentColor == 'cyan' ? 'purple' : 'cyan';
+            }
+        </script>
+    </section></div>
+
+    <div class="textv"><section><form id="textvalidate" onsubmit="alert(validate)">
+        <label for="textin">Test Tester: </label>
+        <input type="text" id="textin" name="textin">
+        <button type="submit">Validate Text</button></form>
+        <script>
+            function validate() {
+                var textin = document.getElementById("texin").value;
+                var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+                if (validation.test(textin)){
+                    alert("No special characters!");
+                }
+                else{
+                    alert("Text is Validated");
+                }
+            }
+        </script>
+    </section></div>
+
+    <div class="add"><section>
+        <button type="button" id="add" onclick="add()">Add Text</button>
+    </section></div>
+
+</body>
+</html>

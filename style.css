@@ -1,0 +1,20 @@
+body {
+    background-color: cyan;
+}
+.name, .switch, .textv, .add{
+    border-style: dotted;
+    background-color: chocolate;
+    border-color: brown;
+}
+.name, .add{
+    float: left;
+    width: 40%;
+    margin: 10px 5px 0px 20px;
+    padding: 10px 5px 0px 30px;
+}
+.switch, .textv{
+    float: right;
+    width: 40%;
+    margin: 10px 5px 0px 20px;
+    padding: 10px 5px 0px 30px;
+}
